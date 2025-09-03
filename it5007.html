@@ -1,15 +1,98 @@
 <html>
     <head>
         <title>IT5007 NEWS WEBSITE</title>
+        <link rel="stylesheet" href="it5007.css">
     </head>
 
     <body>
         <h1>IT5007 News Website</h1>
         <nav>
         <ul>
-            <li><a href="">News</a></li>
+            <li><a href="https://theconversation.com/global">News</a></li>
+            <li><a href="https://www.bilibili.com/">Videos</a></li>
+            <li><a href="https://tse3.mm.bing.net/th/id/OIP.NUqz6dn4ze7KD_h6BW3BqAAAAA?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3">Images</a></li>
         </ul>
         </nav>
+
+        <div id="container">
+            <div id="first">
+                    <div id="firsta" class="news">
+                            <table id="firstatable">
+                                <!-- table 表格 -->
+                                <thead>
+                                    <tr><th>Global News</th></tr>
+                                    <!-- <tr></tr>代表表格中的一行，<th></th>代表表头单元格，如果一行有多个表头就在<tr></tr>中连续使用<th></th> -->
+                                </thead>
+                                <tbody>
+                                    <tr><td>News 1</td></tr>
+                                    <tr><td>News 2</td></tr>
+                                    <tr><td>News 3</td></tr>
+                                    <!-- <td></td>代表表格实际内容的单元格，如果一行有多个内容就连续使用<td></td> -->
+                                </tbody>
+                            </table>
+                    </div>
+                    <div id="firstb" class="news">
+                        <table>
+                            <thead>
+                                <tr><th>Local News</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>News 1</td></tr>
+                                <tr><td>News 2</td></tr>
+                                <tr><td>News 3</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            <div id="second">
+                    <h2>Number guessing game</h2>
+                    <!-- <h2>是二级标题标签 ，字体大、加粗显示-->
+
+                    <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+                    <!-- <p>是段落标签 -->
+
+                    <div class="form">
+                        <label for="guessField">Enter a guess: </label>
+                         <!-- 在 <label> 标签中设置 for="目标元素的id"，实现精准关联。 -->
+                        <input type="text" id="guessField" class="guessField">
+                        <input type="submit" value="Submit guess" class="guessSubmit">
+                        <!-- value设置submit按钮上显示的值 -->
+                    </div>
+
+                    <div class="resultParas">
+                        <p class="result"></p> 
+                        <!-- 显示结果的区域 -->
+                        <p class="lowOrHi"></p> 
+                        <!-- 显示猜高了或猜低了了区域 -->
+                    </div>
+                </div>
+             <div id="third">
+                    <div id="thirda" class="news">
+                        <table>
+                            <thead>
+                                <tr><th>New News</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>News 1</td></tr>
+                                <tr><td>News 2</td></tr>
+                                <tr><td>News 3</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="thirdb" class="news">
+                        <table>
+                            <thead>
+                                <tr><th>Old News</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>News 1</td></tr>
+                                <tr><td>News 2</td></tr>
+                                <tr><td>News 3</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+             </div>
+        </div>
     </body>
 
 </html>
